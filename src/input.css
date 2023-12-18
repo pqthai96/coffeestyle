@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom */
+.ct-top-menu-expanded {
+  @apply absolute top-10 z-50 w-full text-center bg-white animate-slideDown;
+}
+
+.ct-top-menu-item {
+  @apply cursor-pointer py-1 hover:text-gray-800 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-coffee-200 after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
+}
+
+.ct-top-menu-item-active {
+  @apply text-gray-900 font-bold;
+}
+
+.ct-icon {
+  @apply w-5 h-5 inline-block;
+}
+
+.ct-badge-circle {
+  @apply text-xs text-center rounded-full px-1.5;
+}
+
+.ct-subheadline {
+  @apply py-16 flex items-center justify-center;
+}
+
+.ct-subheadline-decor {
+  @apply w-8 h-px bg-gray-300;
+}
+
+.ct-subheadline-label {
+  @apply uppercase mx-4 text-gray-400 text-base font-bold tracking-widest text-center;
+}
+
+.ct-story-content {
+  @apply max-w-[1170px] flex flex-col-reverse gap-10 items-center lg:flex-row lg:justify-between mx-auto p-2;
+}
+
+.ct-story-video {
+  @apply w-auto h-[350px];
+}
+
+.ct-story-text {
+  @apply max-w-[553px] flex flex-col gap-6;
+}
